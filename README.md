@@ -5,10 +5,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Arpitkushwahaa/HireFlow">
-    <img src="https://img.shields.io/github/stars/Arpitkushwahaa/HireFlow?style=social" alt="GitHub stars">
+  <a href="https://github.com/amulyabhardwaj007/HireFlow">
+    <img src="https://img.shields.io/github/stars/amulyabhardwaj007/HireFlow?style=social" alt="GitHub stars">
   </a>
-  <a href="https://github.com/Arpitkushwahaa/HireFlow/blob/main/LICENSE">
+  <a href="https://github.com/amulyabhardwaj007/HireFlow/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-ISC-blue.svg" alt="License">
   </a>
 </p>
@@ -56,7 +56,7 @@
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/Arpitkushwahaa/HireFlow.git
+git clone https://github.com/amulyabhardwaj007/HireFlow.git
 cd HireFlow/talent-IQ-master
 ```
 
@@ -193,10 +193,10 @@ This project is licensed under the ISC License.
 
 ## 👨‍💻 Author
 
-**Arpit Kushwaha**
+**Amulya Bhardwaj**
 
-- GitHub: [@Arpitkushwahaa](https://github.com/Arpitkushwahaa)
-- Project Link: [https://github.com/Arpitkushwahaa/HireFlow](https://github.com/Arpitkushwahaa/HireFlow)
+- GitHub: [@amulyabhardwaj007](https://github.com/amulyabhardwaj007)
+- Project Link: [https://github.com/amulyabhardwaj007/HireFlow](https://github.com/amulyabhardwaj007/HireFlow)
 
 ---
 
@@ -210,4 +210,4 @@ This project is licensed under the ISC License.
 
 ---
 
-<p align="center">Made with ❤️ by Arpit Kushwaha</p>
+<p align="center">Made with hate by Amulya Bhardwaj </p>
