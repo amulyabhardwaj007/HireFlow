@@ -6,21 +6,8 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
+    host: "localhost",
     port: 5173,
-    strictPort: false,
-  },
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          'monaco-editor': ['@monaco-editor/react'],
-          'vendor': ['react', 'react-dom', 'react-router'],
-        },
-      },
-    },
-    chunkSizeWarningLimit: 1000,
-  },
-  optimizeDeps: {
-    include: ['@monaco-editor/react'],
+    strictPort: true,
   },
 });
