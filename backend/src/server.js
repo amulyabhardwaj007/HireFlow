@@ -27,11 +27,11 @@ const allowedOrigins = [
   process.env.PRODUCTION_URL,
 ].filter(Boolean);
 
-app.use(cors({ 
-  origin: function(origin, callback) {
+app.use(cors({
+  origin: function (origin, callback) {
     // Allow requests with no origin (like mobile apps, Postman, curl)
     if (!origin) return callback(null, true);
-    
+
     // Check if origin is in allowed list or matches pattern
     if (allowedOrigins.indexOf(origin) !== -1 || origin.endsWith('.vercel.app') || origin.endsWith('.netlify.app')) {
       callback(null, true);
@@ -73,8 +73,8 @@ console.log("   GET  /api/chat/token");
 
 // Root route
 app.get("/", (req, res) => {
-  res.status(200).json({ 
-    message: "HireFlow API Server", 
+  res.status(200).json({
+    message: "HireFlow API Server",
     status: "running",
     version: "1.0.0",
     endpoints: {
@@ -89,7 +89,7 @@ app.get("/", (req, res) => {
 // 404 handler for undefined routes
 app.use((req, res) => {
   console.log(`404 - Route not found: ${req.method} ${req.path}`);
-  res.status(404).json({ 
+  res.status(404).json({
     message: "Route not found",
     path: req.path,
     method: req.method
@@ -99,10 +99,14 @@ app.use((req, res) => {
 const startServer = async () => {
   try {
     await connectDB();
-    app.listen(ENV.PORT, () => console.log("Server is running on port:", ENV.PORT));
+    if (process.env.NODE_ENV !== "production") {
+      app.listen(ENV.PORT || 3000, () => console.log("Server is running on port:", ENV.PORT || 3000));
+    }
   } catch (error) {
     console.error("💥 Error starting the server", error);
   }
 };
 
 startServer();
+
+export default app;
